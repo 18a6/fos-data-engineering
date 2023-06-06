@@ -7,7 +7,9 @@ import requests
 def get_list_of_cities():
     # read the file cities.json and returns its content.
     # Example: this function should return ["Algiers", "Batna", "Tamanrasset"]
-    pass
+    f = open('data.json')
+    return json.load(f)
+    
 
 def get_lat_lon(city):
     # get latitude and longitude data of cities in Algeria 
